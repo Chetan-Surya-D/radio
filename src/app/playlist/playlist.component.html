@@ -1,0 +1,394 @@
+<div align="center">
+    <a routerLink="adminPass"><img src="../../assets/images/logo.PNG" width="100px"></a>
+</div><br>
+<br>
+<div class="container">
+    <div class="row scrollText">
+        <marquee>{{audioDisplay}}</marquee>
+    </div>
+    
+    <div class="row">
+        <div class="button">
+            <img width="50px" src="../../assets/images/buttons/prev.png" (click)="prev()">
+        </div>
+        <div class="button">
+            <img width="50px" src="../../assets/images/buttons/{{playIcon}}.png" (click)="playAudio()">
+        </div>
+        <div class="button">
+            <img width="50px" src="../../assets/images/buttons/next.png" (click)="next()">
+        </div>
+    </div>
+    <br>
+
+    <!-- After pressing button 1 -->
+    
+    <div class="container" style="clear: both" *ngIf="ch == '1'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Vedagosha")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Mankutimmana Kagga")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Saadakara Kathegalu")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png" (click)='playAudioList("Makkala Hakkugalu")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 1 -->
+
+    <!-- After pressing button 2 -->
+    
+    <div class="container" style="clear: both" *ngIf="ch == '2'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Makkala Aarogya Mahiti")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Radio Cinema")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Mahila Sabaleekarana")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png" (click)='playAudioList("Namma Parisara")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png" (click)='playAudioList("Radio Drama")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 2 -->
+
+    <!-- After pressing button 3 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '3'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Todays Special")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Children International News")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 3 -->
+
+    <!-- After pressing button 4 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '4'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Jalada Jaadu")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Ooru Keari")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 4 -->
+
+    <!-- After pressing button 5 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '5'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Quiz")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Eddalo Manja")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Naati Ideas")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+    <!-- End of button 5 -->
+
+    <!-- After pressing button 6 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '6'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("GHPS Duragada Halli")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Siddaganga School")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Sri Basaveshwara")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 6 -->
+
+    <!-- After pressing button 7 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '7'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Makkale Namma Sangeetha")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Speech of Achievers")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Spell Bee")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 7 -->
+
+    <!-- After pressing button 8 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '8'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Ajji Kathegalu")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("Soft Music")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 8 -->
+
+    <!-- After pressing button 9 -->
+
+    <div class="container" style="clear: both" *ngIf="ch == '9'">
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/1.png" (click)='playAudioList("Hongirana")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/2.png" (click)='playAudioList("News")'>
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/3.png" (click)='playAudioList("Good deeds")'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/4.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/5.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/6.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="button">
+                <img src="../../assets/images/buttons/7.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/8.png">
+            </div>
+            <div class="button">
+                <img src="../../assets/images/buttons/9.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- End of button 9 -->
+
+    <br>
+    <div class="row">
+        <div class="button">
+            <img src="../../assets/images/buttons/home.png" (click)="home()">
+        </div>
+        <div class="button">
+            <a routerLink="#"><img src="../../assets/images/buttons/record.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="#"><img src="../../assets/images/buttons/quiz.png"></a>
+        </div>
+    </div>
+</div>

@@ -1,32 +1,68 @@
 <div align="center">
-    <img src="../../assets/images/logo.PNG" width="100px">
+    <a routerLink="adminPass"><img src="../../assets/images/logo.PNG" width="100px"></a>
 </div>
 
+<div class="scrollText">
+    <marquee>Welcome to radio</marquee>
+</div>
+<br>
+<div class="row">
+    <div class="button">
+        <img width="50px" src="../../assets/images/buttons/prev.png" (click)="prev()">
+    </div>
+    <div class="button">
+        <img width="50px" src="../../assets/images/buttons/{{playIcon}}.png" (click)="playAudioList()">
+    </div>
+    <div class="button">
+        <img width="50px" src="../../assets/images/buttons/next.png" (click)="next()">
+    </div>
+</div>
+<br>
 
 <div class="container" style="clear: both">
-    <div class="row" *ngFor="let i of rows">
-        <div class="col-4" *ngFor="let j of cols">
-            <div class="button">
-                <img src="../../assets/images/buttons/red_button.png">
-                <!-- <h1 style="z-index: 1;">{{((i-1)*3+j)}}</h1> -->
-            </div>
+    <div class="row">
+        <div class="button">
+            <a routerLink="playlist/1"><img src="../../assets/images/buttons/1.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="playlist/2"><img src="../../assets/images/buttons/2.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="playlist/3"><img src="../../assets/images/buttons/3.png"></a>
         </div>
     </div>
     <div class="row">
-            <div class="button">
-                <img src="../../assets/images/buttons/red_button.png">
-                <h1 style="z-index: 1;">C</h1>
-            </div>
-            <div class="button">
-                <img src="../../assets/images/buttons/red_button.png">
-                <h1 style="z-index: 1;">0</h1>
-            </div>
-            <div class="button">
-                <img src="../../assets/images/buttons/red_button.png">
-                <h1 style="z-index: 1;">Q</h1>
-            </div>
+        <div class="button">
+            <a routerLink="playlist/4"><img src="../../assets/images/buttons/4.png"></a>
         </div>
-    <div style="background-color: #ffcc00; border-radius: 25px; height: 50px;">
-        <marquee>Welcome to radio</marquee>
+        <div class="button">
+            <a routerLink="playlist/5"><img src="../../assets/images/buttons/5.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="playlist/6"><img src="../../assets/images/buttons/6.png"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="button">
+            <a routerLink="playlist/7"><img src="../../assets/images/buttons/7.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="playlist/8"><img src="../../assets/images/buttons/8.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink="playlist/9"><img src="../../assets/images/buttons/9.png"></a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="button">
+            <a routerLink=""><img src="../../assets/images/buttons/contact.png"></a>
+        </div>
+        <div class="button">
+            <a routerLink=""><img src="../../assets/images/buttons/{{recordStat}}.png" (click)="startRecord()"></a>
+        </div>
+        <div class="button">
+            <a routerLink="favourites"><img src="../../assets/images/buttons/fav.png"></a>
+        </div>
     </div>
 </div>

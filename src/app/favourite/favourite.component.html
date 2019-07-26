@@ -1,0 +1,34 @@
+<div align="center">
+        <a routerLink="adminPass"><img src="../../assets/images/logo.PNG" width="100px"></a>
+    </div>
+    
+    <br>
+    <div class="container">
+        <div class="row scrollText">
+            <marquee>{{songName}}</marquee>
+        </div>
+        <div class="row">
+            <div class="button">
+                <a routerLink=""><img width="50px" src="../../assets/images/buttons/prev.png"></a>
+            </div>
+            <div class="button">
+                <img width="50px" src="../../assets/images/buttons/{{playIcon}}.png" (click)="playSong()">
+            </div>
+            <div class="button">
+                <a routerLink="#"><img width="50px" src="../../assets/images/buttons/next.png"></a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="button">
+                <a routerLink=""><img src="../../assets/images/buttons/home.png"></a>
+            </div>
+            <div class="button">
+                <a routerLink="#"><img src="../../assets/images/buttons/record.png"></a>
+            </div>
+            <div class="button">
+                <a href="https://192.168.2.106/quiz"><img src="../../assets/images/buttons/quiz.png"></a>
+            </div>
+        </div>
+    </div>
+    

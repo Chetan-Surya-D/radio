@@ -1,0 +1,13 @@
+$boxGrad: linear-gradient(to top, rgb(255, 190, 0), rgb(255, 255, 180), rgb(255, 230, 0), rgb(255, 210, 0),);
+
+.scrollText {
+    background-image: $boxGrad;
+    border-radius: 25px;
+    height: 50px;
+
+    marquee {
+        font-size: 200%;
+        font-weight: bold; 
+        color: rgba(10, 10, 10, 0.75);
+    }
+}

@@ -1,0 +1,38 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-lg-4">
+            <form class="bgStyle" #login="ngForm">
+                <div class="button" style="position: absolute; top: 50px">
+                    <a routerLink=""><img style="width: 50px;" src="../../assets/images/buttons/home.png"></a>
+                </div>
+                <h3 align="center" style="color: black">Admin Form</h3>
+                <div class="test">
+                   <input type="text" name="aname" required ngModel #aname="ngModel"><br>        
+                    <label>Audio Name<span>*</span></label>
+                    <p *ngIf="aname.invalid && aname.touched">Enter Audio Name</p>
+                </div>
+                
+                <div class="test">
+                    <input type="text" name="fname" required ngModel #fname="ngModel"><br>
+                    <label>File Name<span>*</span></label>
+                    <p *ngIf="fname.invalid && fname.touched">Enter File Name</p>
+                </div>
+
+                
+                <div class="test">
+                        <select type="text" name="category" required ngModel #category="ngModel">
+                            <option *ngFor="let i of categories">{{i}}</option>
+                        </select><br>
+                        <label>category<span>*</span></label>
+                        <p *ngIf="category.invalid && category.touched">Enter audio Category</p>
+                </div>
+                <br>                
+                <p class="message" style="color: red">{{errorText}}</p>
+                <p class="message" style="color: green">{{successText}}</p>
+                <div class="button1" (click)="accept(login)">Submit</div>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
